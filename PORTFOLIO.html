@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snehal Kansal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2ff7d75c11.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header" class="home">Home</a></li>
+                    <li><a href="#about" class="home">About</a></li>
+                    <li><a href="#skills" class="home">Skills</a></li>
+                    <li><a href="#experiences" class="home">Experiences</a></li>
+                    <li><a href="#contact" class="home">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <br>Snehal Kansal</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/lll.jpg" alt="Snehal Kansal's image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="sub-tit">
+                        I am Snehal Kansal, a Computer Science student with a specialization in Bioinformatics from VIT.
+                        Currently, I am exploring the realms of machine learning and deep learning, particularly
+                        focusing on applications in individualized medicine, genomics, and medical image analysis. My
+                        academic journey is complemented by my involvement in the IEEE EMBS student chapter, where I
+                        engage in event planning and outreach. With a penchant for creative content, I enjoy
+                        leveraging social media to enhance engagement. My background also includes experience in school
+                        leadership as a house captain, and in extracurricular activities like the choir and debate
+                        society. I am driven by innovation and eager to bridge technology with practical solutions in
+                        healthcare.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'hobbies')">Hobbies & Interests</p>
+                        <p class="tab-links" onclick="opentab(event, 'quotes')">Personal Quotes</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="hobbies">
+                        <ul>
+                            <li><span></span><br>Basketball</li>
+                            <li><span></span><br>Reading</li>
+                            <li><span></span><br>Photogrpahy</li>
+                            <li><span></span><br>Sketching</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="quotes">
+                        <ul>
+                            <li><span>"The best way to get started is to quit talking and begin doing."</span><br>- Walt
+                                Disney</li>
+                            <li><span>"The biggest risk is not taking any risk."</span><br>- Mark Zuckerberg</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- skills -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <i class="fa-solid fa-code-fork"></i>
+                    <h2>C++</h2>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI / UX</h2>
+                </div>
+                <!-- Add more skill items here -->
+            </div>
+        </div>
+    </div>
+    <!-- Experiences -->
+    <div id="experiences">
+        <div class="container">
+            <h1 class="sub-title">Experiences</h1>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h2>Software Engineering Fellow @ Headstarter AI</h2>
+                </div>
+                <div class="grid-item">
+                    <h2>Junior Core Member @ IEEE EMBS Chapter- VIT</h2>
+                </div>
+                <div class="grid-item">
+                    <h2>Junior Core Member @ VIT Dramatics Club</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Contact -->
+ <div id="contact">
+<section class="contact-section">
+    <h1>Contact</h1>
+
+    <ul class="contact-info">
+      <li>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:snehalkansal10@gmail.com">Email</a>
+      </li>
+      <li>
+        <i class="fab fa-linkedin-in"></i>
+        <a href="https://www.linkedin.com/in/snehalkansal/">LinkedIn</a>
+      </li>
+      <li>
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/SnehalKansal">Github</a>
+      </li>
+      <li>
+        <i class="fab fa-instagram"></i>
+        <a href="https://www.instagram.com/_snehal_.k/">Instagram</a>
+      </li>
+      <li>
+        <i class="fab fa-twitter"></i>
+        <a href="https://www.twitter.com/example">Twitter</a>
+      </li>
+    </ul>
+</div>
+  </section>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(event, tabname) {
+            // Remove active-link class from all tab links
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+            }
+
+            // Add active-link class to the current tab link
+            event.currentTarget.classList.add("active-link");
+
+            // Remove active-tab class from all tab contents
+            for (var i = 0; i < tabcontents.length; i++) {
+                tabcontents[i].classList.remove("active-tab");
+            }
+
+            // Add active-tab class to the current tab content
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
